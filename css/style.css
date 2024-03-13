@@ -1,0 +1,98 @@
+/* color palette*/
+/*
+#253F60	(37,63,96) - darkblue
+#516580	(81,101,128) -mediumdarkblue
+#7C8CA0	(124,140,160) - blue
+#A8B2BF	(168,178,191) - lightblue
+#D3D9DF	(211,217,223) - lighterblue
+ */
+.page-header {
+	display: flex;
+	width: 100%;
+	padding: 20px;
+}
+
+.dillo-logo{
+    width: 90px;
+    height: 90px;
+}
+
+.navbar {
+	margin: auto;
+	padding: 10px;
+	text-align: center;
+}
+
+.navigation-logo {
+	position: relative;
+	top: 10px;
+	left: 10px;
+}
+
+.nav-list li {
+	list-style-type: none;
+	display: inline-block;
+	margin-left: 15px;
+}
+
+main {
+	padding: 10px;
+	margin: 10px;
+}
+.profile-picture {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	margin-right: 40px;
+	float: left;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 20px;
+}
+
+.grid-item{
+    padding: 20px;
+}
+.grid-item:last-child {
+	grid-column-start: 3;
+	grid-column-end: 3;
+	grid-row-start: 1;
+	grid-row-end: 3;
+}
+
+.project-img {
+	max-width: 100%;
+	max-height: 100%;
+	margin: 10px;
+	padding: 10px;
+    float: left;
+}
+
+.project-img:hover {
+    opacity: 0.8;
+}
+
+.project-img:active {
+    opacity: 1;
+}
+
+/* chat app image is too big seperate class */
+.project-img-chat {
+	max-width: 50%;
+	max-height: 50%;
+    margin: 10px;
+	padding: 10px;
+	float: right;
+}
+
+.project-img-chat:hover {
+    opacity: 0.8;
+}
+
+.page-footer {
+	clear: both;
+	display: flex;
+}
