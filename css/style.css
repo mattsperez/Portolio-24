@@ -6,34 +6,43 @@
 #26a0d9	(38,160,217) - bright blue
 #212e40	(33,46,64) - navy blue
  */
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
 
-*{
-    background-color: #2e587a;
-    border-radius: 20px;
-    color: #e5f2ff;
-    text-align: right;
-    padding: 20px;
+* {
+	margin: 0;
+	padding: 0;
+    font-family: 'Jost', sans;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
+a {
+	color: black;
+	text-decoration: none;
+	text-decoration-color: white;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+/* navigation menu/header */
 .page-header {
-	display: flex;
 	padding: 10px;
-    margin: 10px;
-    background-color: #26a0d9;
-    border-radius: 30px;
-   
+	margin: 10px;
 }
 
-.dillo-logo{
-    width: 90px;
-    height: 90px;
-    color: #D3D9DF;
+.navbar,
+.nav-list {
+	display: flex;
 }
 
 .navbar {
-	padding: 10px;
-    margin: auto;
-	text-align: center;
+	justify-content: space-around;
+	align-items: center;
+	height: 17vh;
 }
 
 .navigation-logo {
@@ -42,98 +51,94 @@
 	left: 10px;
 }
 
-.nav-list li {
+.nav-list {
 	list-style-type: none;
-	display: inline-block;
-	margin-right: 10px;
+	gap: 2rem;
 }
 
-main {
-	padding: 10px;
-	margin: 10px;
+/* sections */
+section {
+	padding-top: 4vh;
+	height: 96vh;
+	margin: 0 10rem;
+	box-sizing: border-box;
+	min-height: fit-content;
 }
 
-.hero-title{
-    padding: 100px;
-    border-radius: 30px;
-    background-color: #26a0d9;
-    
-}
-
-.about-me{
-    padding: 90px;
-    margin: 10px;
-    background-color: #26a0d9;
-    border-radius: 30px;
-}
-
-.project-grid{
-    background-color: #26a0d9;
-    padding: 10px;
-    margin: 10px;
-    border-radius: 30px;
-}
-
-.profile-picture {
-	width: 200px;
-	height: 200px;
-	border-radius: 50%;
-	margin-right: 40px;
-	float: left;
-}
-
-.grid {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-gap: 20px;
-}
-
-.grid-item{
-    padding: 20px;
-}
-.grid-item:last-child {
-	grid-column-start: 3;
-	grid-column-end: 3;
-	grid-row-start: 1;
-	grid-row-end: 3;
-}
-
-.project-img {
-	max-width: 100%;
-	max-height: 100%;
-	margin: 10px;
-	padding: 10px;
-    float: left;
-}
-
-.project-img:hover {
-    opacity: 0.8;
-}
-
-.project-img:active {
-    opacity: 1;
-}
-
-/* chat app image is too big seperate class */
-.project-img-chat {
-	max-width: 50%;
-	max-height: 50%;
-    margin: 10px;
-	padding: 10px;
-	float: right;
-}
-
-.project-img-chat:hover {
-    opacity: 0.8;
-}
-
-.page-footer {
-	clear: both;
+/* landing page section */
+#profile {
 	display: flex;
-    text-align: center;
-    justify-content: center;
-    background-color: #26a0d9;
-    border-radius: 30px;
-    margin: 20px;
-    padding: 20px;
+	justify-content: center;
+	gap: 5rem;
+	height: 80vh;
 }
+
+.profile-container {
+	display: flex;
+	width: 400px;
+	height: 400px;
+	margin: auto 0;
+}
+
+.profile-img {
+	border-radius: 50%;
+}
+
+/* about me */
+
+/* project section */
+.title, .project-text-p1 {
+	text-align: center;
+}
+
+#projects {
+	position: relative;
+}
+
+.project-section-container {
+	border: #212e40 0.2rem solid;
+	display: flex;
+	justify-content: center;
+    flex-direction: column;
+}
+
+.project-containers {
+    border: #212e40 0.2rem solid;
+    display: flex;
+	flex-wrap: wrap;
+    flex-direction: row;
+	gap: 2.5rem;
+	justify-content: space-around;
+}
+
+.project-details{
+    display: flex;
+    justify-content: space-around;
+    gap: 0.5rem;
+}
+
+.project-screenshot {
+	width: 80%;
+	height: 80%;
+	margin: auto 0;
+}
+
+.project-title {
+	margin: 1rem;
+}
+
+.project-btn {
+	background-color: #618394;
+	border-radius: 10px;
+}
+.project-btn:hover {
+	background-color: #e5f2ff;
+	opacity: 0.8;
+}
+
+.project-btn:active {
+	background-color: #2e587a;
+	opacity: 1;
+}
+
+/* contact me section */
