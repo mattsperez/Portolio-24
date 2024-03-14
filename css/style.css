@@ -1,25 +1,38 @@
 /* color palette*/
 /*
-#253F60	(37,63,96) - darkblue
-#516580	(81,101,128) -mediumdarkblue
-#7C8CA0	(124,140,160) - blue
-#A8B2BF	(168,178,191) - lightblue
-#D3D9DF	(211,217,223) - lighterblue
+#e5f2ff	(229,242,255) - light blue
+#618394	(97,131,148) - gray blue
+#2e587a	(46,88,122) - dark blue
+#26a0d9	(38,160,217) - bright blue
+#212e40	(33,46,64) - navy blue
  */
+
+*{
+    background-color: #2e587a;
+    border-radius: 20px;
+    color: #e5f2ff;
+    text-align: right;
+    padding: 20px;
+}
+
 .page-header {
 	display: flex;
-	width: 100%;
-	padding: 20px;
+	padding: 10px;
+    margin: 10px;
+    background-color: #26a0d9;
+    border-radius: 30px;
+   
 }
 
 .dillo-logo{
     width: 90px;
     height: 90px;
+    color: #D3D9DF;
 }
 
 .navbar {
-	margin: auto;
 	padding: 10px;
+    margin: auto;
 	text-align: center;
 }
 
@@ -32,13 +45,35 @@
 .nav-list li {
 	list-style-type: none;
 	display: inline-block;
-	margin-left: 15px;
+	margin-right: 10px;
 }
 
 main {
 	padding: 10px;
 	margin: 10px;
 }
+
+.hero-title{
+    padding: 100px;
+    border-radius: 30px;
+    background-color: #26a0d9;
+    
+}
+
+.about-me{
+    padding: 90px;
+    margin: 10px;
+    background-color: #26a0d9;
+    border-radius: 30px;
+}
+
+.project-grid{
+    background-color: #26a0d9;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 30px;
+}
+
 .profile-picture {
 	width: 200px;
 	height: 200px;
@@ -95,4 +130,10 @@ main {
 .page-footer {
 	clear: both;
 	display: flex;
+    text-align: center;
+    justify-content: center;
+    background-color: #26a0d9;
+    border-radius: 30px;
+    margin: 20px;
+    padding: 20px;
 }
